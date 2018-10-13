@@ -1,0 +1,59 @@
+/* ----------- 主页 ----------- */
+/* 调整年份显示 */
+.item-year a.text-year {
+    font-family: "Lucida Grande", "Lucida Sans Unicode", Helvetica, Arial, Verdana, sans-serif, 微软雅黑;
+}
+.item-year {
+    padding-bottom: 7px;
+}
+.text-year i {
+    display: none;
+}
+
+/* ----------- 博文页 ----------- */
+/* 行内代码 */
+code {
+    padding: 0px 5px;
+    font-size: 0.9em;
+    border-radius: 5px;
+    margin: 0px 2px;
+    vertical-align: bottom;
+}
+
+/* 使代码行号不可复制 */
+.gutter pre {
+    -webkit-user-select: none;
+    user-select: none;
+    color: #b3b3b3
+}
+
+/* 代码部分使用等宽字体 */
+.highlight pre {
+    font-family: Consolas,Inconsolata,Courier,monospace,"PingFang SC","Microsoft YaHei",sans-serif;
+}
+
+/* 正常显示博客间切换按钮 */
+.box-prev-next{
+    margin-top: 0px;
+}
+
+/* 不显示Valine版权信息（博客中有一篇提到使用了valine，这里删掉只是避免每页重复） */
+.v .txt-right {
+    display: none;
+}
+
+/* 图片样式调整：为了不影响一些不需要圆角和阴影的图片，限定了包裹在<center>中的图片才应用此样式 */
+.article-content center img {
+    border-radius: 6px;
+    box-shadow: 0px 0px 13px #CCC;
+    margin-top: -2em; /* 图片会莫名其妙多出一个<br>，这里处理一下 */
+}
+
+/* 引用样式调整 */
+.article-content blockquote{
+    margin-bottom: 10px;
+}
+.article-content blockquote p {
+    margin: 10px 0;
+}
+</center>

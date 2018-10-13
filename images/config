@@ -1,0 +1,217 @@
+# 博客基本信息
+blog_name: Annie Aldo
+slogan: Test Blog Test Blog Test Blog Test Blog
+url: https://anniealdo.github.io
+
+# 设置头像（可以用图床）
+avatar: /images/avatar.jpg
+
+# 设置网站图标
+favicon: /images/favicon.ico
+
+# 设置SEO
+keywords: 机器学习,人工智能,基础安全,摄影,UI设计,编曲
+
+# 设置首页导航：不起效，因为在下面的配置中我设置首页直接显示【文章列表】
+home_nav:
+  - name: Blog
+    url: /archives
+    target_blank: false # 不在新页面打开
+  - name: Project
+    url: /project/
+    target_blank: true # 在新页面打开
+  - name: Github
+    url: https://github.com/forsigner
+    target_blank: true
+
+# 设置博客页面导航
+page_nav:
+  - name: 博客
+    url: /archives/
+    target_blank: false
+  - name: 分类
+    url: /category/
+    target_blank: false
+  - name: 标签
+    url: /tag/
+    target_blank: false
+  - name: 搜索
+    url: /search/
+    target_blank: false
+  # - name: RSS
+  #   url: /atom.xml
+  #   target_blank: true
+  # - name: 友链
+  #   url: /link/
+  #   target_blank: false
+  # - name: 关于
+  #   url: /about/
+  #   target_blank: false
+
+# 设置博客页面导航样式
+page_nav_style: ROUND_RECT  # CIRCLE|ROUND_RECT
+
+# 面包屑
+breadcrumb:
+  isShow: fase # true|fase
+
+# 盒子
+toolbox:
+  isShow: true # true|fase
+  text: 导航
+
+# 搜索页面 Slogan
+search_slogan:
+  isShow: true # true|fase
+  text: your text
+
+# 友链页面 Slogan
+link_slogan:
+  isShow: true # true|fase
+  text: 交换友链可以邮件 forsigner@gmail.com
+
+
+# set backtop show or hide
+backtop:
+  home: false
+  archive: false
+  category: true
+  tag: true
+  post: true
+  link: false
+  about: false
+
+donation:
+  show: false
+  btn_text: 支持一下
+  tip: 扫一扫，支持forsigner
+  items:
+    - type: 微信
+      text: 微信扫一扫
+      imgUrl: /images/qr-wechat.png
+    - type: 支付宝
+      text: 支付宝扫一扫
+      imgUrl: /images/qr-alipay.png
+
+# 关于博文的配置
+post:
+  header_align: CENTER # LEFT|CENTER 设置文章标题对齐方式
+  showToc: true # true|false
+  showComments: true
+  open_in_new_window: false
+  show_prev_next: true
+
+# =========================================================
+# 个性化设置
+# =========================================================
+
+# Custom CSS style, 推荐把样式文件放在blog源码文件夹，而不是主题里面
+personal_style: /css/custom.css
+
+# 这个值取决于你的背景图片是深色还是浅色，深色用dark，浅色用light
+home_background_scheme: light # dark、light
+
+# 设置显示姓名的字体
+# custom font-family 暂时只支持这3种英文字体，你可以完全自定义字体(看文档)
+# blog_name_font_familiy: calligraffittiregular
+# blog_name_font_familiy: Lobster-Regular
+blog_name_font_familiy: PoiretOne-Regular
+
+# 设置首页内容
+# 你可以设置是否在首页显示【导航页HOME_NAV】或者【文章列表POST】
+init_page_content: POST # HOME_NAV | POST
+
+# =========================================================
+# 第三方服务
+# =========================================================
+# Stats
+google_analytics:
+baidu_analytics: 3c7b075cda3c56d14e9a824a85eec2ea
+
+# ------评论功能------
+# 在下面五种中选一个就行
+
+# 1. 基础评论
+# disqus_shortname: forsigner
+# gitalk_shortname: forsigner
+# hypercomments_id: 89821
+# gentie_key: d16a7241e7cd4b389584ed8db2a4e8bc
+
+# 2. 有言
+# 有言用户编号
+# uyan_key:
+
+# changyan_appid:
+# changyan_appkey:
+
+# 3. gitment评论服务
+# gitment:
+#     on: false  # true | false  这里开启
+#     owner: # Your GitHub ID. Required.
+#     repo: # The repository to store your comments. Make sure you're repo's owner. Required.
+#     oauth: # An object contains your client ID and client secret. Required.
+#         client_id: # GitHub client ID. Required.
+#         client_secret: # GitHub client secret. Required.
+#     id: # An optional string to identify your page. Default location.href.
+#     title: # An optional title for your page, used as issue's title. Default document.title.
+#     link: # An optional link for your page, used in issue's body. Default location.href.
+#     desc: # An optional description for your page, used in issue's body. Default ''.
+#     labels: # An optional array of labels your want to add when creating the issue. Default [].
+#     theme: # An optional Gitment theme object. Default gitment.defaultTheme.
+#     perPage: # An optional number to which comments will be paginated. Default 20.
+#     maxCommentHeight: # An optional number to limit comments' max height, over which comments will be folded. Default 250.
+
+# 4. Valine评论系统  https://valine.js.org
+valine:
+  enable: true # 如果使用valine，请设置改之为true
+  appid: 8fMGSVMEOL4RdICaLRnTqnFO-gzGzoHsz
+  appkey: Te18vwA44bmNaCDiNiULppnY
+  notify: true # 评论被回复后的邮件提醒 , https://github.com/xCss/Valine/wiki
+  verify: false # 评论是否需要输入验证码
+  placeholder: Comment here. Markdown is supported. # 评论的默认提示文字
+  avatar: identicon # 配置项参考 https://valine.js.org/avatar.html
+  guest_info: nick,mail,link # custom comment header
+  pageSize: 10 # pagination size
+
+# 5. 不算子：文章访问量统计和显示
+busuanzi: true
+
+# =========================================================
+# 页面内容设置
+# =========================================================
+about:
+  - type: me
+    icon: icon-user
+    text_value:
+    - "Scut，1991，Spring."
+    - "喜欢设计，擅长编程，喜欢睡懒觉."
+    - "前端开发工程师，常用 HTML / CSS / JavaScript."
+  - type: Github
+    icon: icon-github
+    text_key: Github
+    text_value: "@forsigner"
+    text_value_url: https://github.com/forsigner
+  - type: weibo
+    icon: icon-weibo
+    text_key: 微博
+    text_value: "@forsigner"
+    text_value_url: http://weibo.com/u/1847075964
+  - type: mail
+    icon: icon-mail
+    text_key: Gmail
+    text_value: "forsigner@gmail.com"
+  - type: location
+    icon: icon-location
+    text_value: 珠海
+
+link:
+  - name: 织网
+    info: 身体和灵魂，总有一个在路上
+    url: http://zheng-ji.info/
+    avatar: https://avatars3.githubusercontent.com/u/1414745?v=3&s=100
+
+project:
+  - type: personal
+    name: web-fontmin
+    url: https://github.com/forsigner/web-fontmin
+    intro: 字体子集化，在线提取你需要的字体
