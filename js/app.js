@@ -90,7 +90,6 @@
       Util.removeClass($cover, 'hide');
     });
 
-
     Util.bind($cover, 'click', closeModal);
     Util.bind($close, 'click', closeModal);
   }

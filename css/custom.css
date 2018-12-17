@@ -1,4 +1,5 @@
 /* ----------- 主页 ----------- */
+
 /* 调整年份显示 */
 .item-year a.text-year {
     font-family: "Lucida Grande", "Lucida Sans Unicode", Helvetica, Arial, Verdana, sans-serif, 微软雅黑;
@@ -10,7 +11,26 @@
     display: none;
 }
 
+/* 主页背景设置 */
+html.page-home {
+    background: radial-gradient(ellipse at bottom, #fff 0%, #fefefe 100%);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    /* background-image: url('/images/bg.jpg'); */
+    background-color: transparent;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+.page-header {
+    background-color: transparent;
+}
+
 /* ----------- 博文页 ----------- */
+
 /* 行内代码 */
 code {
     padding: 0px 5px;
@@ -29,11 +49,11 @@ code {
 
 /* 代码部分使用等宽字体 */
 .highlight pre {
-    font-family: Consolas,Inconsolata,Courier,monospace,"PingFang SC","Microsoft YaHei",sans-serif;
+    font-family: Consolas, Inconsolata, Courier, monospace, "PingFang SC", "Microsoft YaHei", sans-serif;
 }
 
 /* 正常显示博客间切换按钮 */
-.box-prev-next{
+.box-prev-next {
     margin-top: 0px;
 }
 
@@ -50,7 +70,7 @@ code {
 }
 
 /* 引用样式调整 */
-.article-content blockquote{
+.article-content blockquote {
     margin-bottom: 10px;
 }
 .article-content blockquote p {
