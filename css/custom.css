@@ -29,6 +29,11 @@ html.page-home {
     background-color: transparent;
 }
 
+/* 分类页 */
+.category-count .category-size{
+    font-family: "Lucida Grande", "Lucida Sans Unicode", Helvetica, Arial, Verdana, sans-serif, 微软雅黑;
+}
+
 /* ----------- 博文页 ----------- */
 
 /* 行内代码 */
