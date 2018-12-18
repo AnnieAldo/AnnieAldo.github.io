@@ -5,11 +5,7 @@
 
 /* 行内代码 */
 code {
-    padding: 0px 5px;
-    font-size: 0.9em;
     border-radius: 5px;
-    margin: 0px 2px;
-    vertical-align: bottom;
 }
 
 /* 使代码行号不可复制 */
@@ -25,8 +21,14 @@ code {
 }
 
 /* 图片样式调整：为了不影响一些不需要圆角和阴影的图片，限定了包裹在<center>中的图片才应用此样式 */
-.article-content center img {
-    border-radius: 6px;
+.article-entry img, .article-entry video {
+    border-radius: 3px;
     box-shadow: 0px 0px 13px #CCC;
+    border: 0px;
+}
+
+/* 评论 */
+.vat {
+    color: #1d9531 !important;
 }
 </center>

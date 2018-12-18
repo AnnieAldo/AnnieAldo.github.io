@@ -16,7 +16,7 @@
 <meta property="og:image" content="https://anniealdo.github.io/images/教程-180918-使用Hexo和Github%20Pages搭建博客-1.png">
 <meta property="og:image" content="https://anniealdo.github.io/images/教程-180918-使用Hexo和Github%20Pages搭建博客-2.png">
 <meta property="og:image" content="https://anniealdo.github.io/images/教程-180918-使用Hexo和Github%20Pages搭建博客-3.png">
-<meta property="og:updated_time" content="2018-12-18T08:54:58.944Z">
+<meta property="og:updated_time" content="2018-12-18T15:32:24.784Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="使用Hexo和Github Pages搭建博客">
 <meta name="twitter:description" content="按照常规，为了庆祝博客搭建成功，发一篇教程。当然，也是因为我在搭建博客过程时废了一番功夫，似乎目前没有什么教程能够让一个零基础的新手轻松搭建自己的博客。因此写了这个教程，主要针对对hexo没有概念、第一次搭建博客的小白用户。">
@@ -101,15 +101,12 @@
 <h2 id="第2步：Git"><a href="#第2步：Git" class="headerlink" title="第2步：Git"></a>第2步：Git</h2><h3 id="创建Repository"><a href="#创建Repository" class="headerlink" title="创建Repository"></a>创建Repository</h3><blockquote>
 <p>下述步骤和<a href="https://pages.github.com/" target="_blank" rel="noopener">Github Pages官方文档</a>中一致。</p>
 </blockquote>
-<p>登录<a href="https://github.com/" target="_blank" rel="noopener">Github</a><br>创建自己的Repository</p>
-<center><br><img src="/images/教程-180918-使用Hexo和Github Pages搭建博客-1.png" width="240" alt="图片名称"><br></center>
-
-<p>如图填写<code>repository name</code>为<code>username.github.io</code>，其中<code>username</code>就是你Github的用户名</p>
-<center><br><img src="/images/教程-180918-使用Hexo和Github Pages搭建博客-2.png" width="600" alt="图片名称"><br></center>
-
+<p>登录<a href="https://github.com/" target="_blank" rel="noopener">Github</a>，创建自己的Repository</p>
+<p><img src="/images/教程-180918-使用Hexo和Github Pages搭建博客-1.png" width="240"></p>
+<p>如图填写<code>repository name</code>为<code>username.github.io</code>，其中<code>username</code>必须是你Github的用户名</p>
+<p><img src="/images/教程-180918-使用Hexo和Github Pages搭建博客-2.png" width="600"></p>
 <p>创建完成后，复制此时显示的url</p>
-<center><br><img src="/images/教程-180918-使用Hexo和Github Pages搭建博客-3.png" alt=""><br></center>
-
+<p><img src="/images/教程-180918-使用Hexo和Github Pages搭建博客-3.png" alt=""></p>
 <h3 id="配置本地博客"><a href="#配置本地博客" class="headerlink" title="配置本地博客"></a>配置本地博客</h3><p>打开博客根目录下的<code>_config.yml</code>文件<br>修改<code>Deployment</code>下面的配置，把刚刚复制的url粘贴到<code>repo:</code>后面</p>
 <figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Deployment</span></span><br><span class="line"><span class="comment">## Docs: https://hexo.io/docs/deployment.html</span></span><br><span class="line"><span class="attr">deploy:</span></span><br><span class="line"><span class="attr">  type:</span> <span class="string">git</span></span><br><span class="line"><span class="attr">  repo:</span> <span class="attr">https://github.com/AnnieAldo/AnnieAldo.github.io</span></span><br><span class="line"><span class="attr">  branch:</span> <span class="string">master</span></span><br></pre></td></tr></table></figure>
 <blockquote>
@@ -143,7 +140,7 @@
 </tbody>
 </table>
 <p>好了，在等待Github Pages刷新出来的这段时间里，让我们接着给我们的博客安装一个主题吧~</p>
-<h2 id="第3步：安装主题"><a href="#第3步：安装主题" class="headerlink" title="第3步：安装主题"></a>第3步：安装主题</h2><p>官方博客可以说是很丑陋了<br>让我们一起来给自己的博客挑选一个主题吧~<br>在<a href="https://github.com/hexojs/hexo/wiki/Themes" target="_blank" rel="noopener">这里</a>可以看到Hexo社区中的所有主题，点开<code>Demo</code>就能够预览</p>
+<h2 id="第3步：安装主题"><a href="#第3步：安装主题" class="headerlink" title="第3步：安装主题"></a>第3步：安装主题</h2><p>官方博客可以说是很丑陋了，让我们一起来给自己的博客挑选一个主题吧~<br>在<a href="https://github.com/hexojs/hexo/wiki/Themes" target="_blank" rel="noopener">这里</a>可以看到Hexo社区中的所有主题，点开<code>Demo</code>就能够预览</p>
 <p>网上很多教程都会使用<a href="https://github.com/iissnan/hexo-theme-next" target="_blank" rel="noopener">NexT主题</a>，如果你也喜欢这款主题，可以搜索一下其他关于这个主题的教程</p>
 <p>本篇教程中介绍我自己使用的<a href="https://github.com/forsigner/fexo" target="_blank" rel="noopener">fexo主题</a><br>这个主题非常简洁，拥有漂亮的Markdown语法渲染，而且自定义程度高<br>后文也会提到一些主题自定义的内容</p>
 <p>下面的文章都会按照安装<code>fexo</code>主题的步骤去讲<br>你可以选择和我安装一样的主题，也可以选择只看主题间共性的内容</p>
@@ -165,11 +162,11 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://anniealdo.github.io/2018/09/18/使用Hexo和Github Pages搭建博客/" data-id="cjptvd1730002neezjoaaekg7" class="article-share-link">share</a>
+      <a data-url="https://anniealdo.github.io/2018/09/18/使用Hexo和Github Pages搭建博客/" data-id="cjptw5i720002sbez6wqc6res" class="article-share-link">Share</a>
       
         <a href="/2018/09/18/使用Hexo和Github Pages搭建博客/#comments" class="article-comment-link">
           <span class="post-comments-count valine-comment-count" data-xid="/2018/09/18/使用Hexo和Github Pages搭建博客/" itemprop="commentCount"></span>
-          comment
+          Comment
         </a>
       
       
@@ -206,12 +203,11 @@
 
     <div class="widget">
         <ul class='toc'>
-        <li><a class='anchor' href='#logo'>Title</a></li>
         <li><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#预备工作"><span class="toc-number">1.</span> <span class="toc-text">预备工作</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#预备知识"><span class="toc-number">1.1.</span> <span class="toc-text">预备知识</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#预备环境"><span class="toc-number">1.2.</span> <span class="toc-text">预备环境</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#第1步：安装Hexo"><span class="toc-number">2.</span> <span class="toc-text">第1步：安装Hexo</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#第2步：Git"><span class="toc-number">3.</span> <span class="toc-text">第2步：Git</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#创建Repository"><span class="toc-number">3.1.</span> <span class="toc-text">创建Repository</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#配置本地博客"><span class="toc-number">3.2.</span> <span class="toc-text">配置本地博客</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#博客调试与更新"><span class="toc-number">3.3.</span> <span class="toc-text">博客调试与更新</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#第3步：安装主题"><span class="toc-number">4.</span> <span class="toc-text">第3步：安装主题</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#安装主题"><span class="toc-number">4.1.</span> <span class="toc-text">安装主题</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#启用主题"><span class="toc-number">4.2.</span> <span class="toc-text">启用主题</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#自定义主题"><span class="toc-number">4.3.</span> <span class="toc-text">自定义主题</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Debug"><span class="toc-number">4.4.</span> <span class="toc-text">Debug</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#目录显示错误（前面有黑点）"><span class="toc-number">4.4.1.</span> <span class="toc-text">目录显示错误（前面有黑点）</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#custom-css提交后的更新会比较慢"><span class="toc-number">4.4.2.</span> <span class="toc-text">custom.css提交后的更新会比较慢</span></a></li></ol></li></ol></li></ol></li>
-        <li><a class='anchor' href='#comments'>Comments</a></li> 
         </ul>
     </div>
 </div>
+
     
 </aside>
           
