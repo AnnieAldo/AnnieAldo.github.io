@@ -54,7 +54,7 @@ h3 {
 }
 .article-entry h3:before {
   border-radius: 50%;
-  background-color: #38b48b;
+  background-color: #f17c67;
   content: '';
   width: 6px;
   display: inline-block;
@@ -73,7 +73,7 @@ h4 {
   font-size: 1.25em
 }
 h4:before {
-  background-color: #38b48b;
+  background-color: #f17c67;
   content: '';
   width: 6px;
   display: inline-block;
