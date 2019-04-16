@@ -330,7 +330,7 @@ body {
 #logo,
 #subtitle {
   text-decoration: none;
-  color: #f17c67;
+  color: #4b5cc4;
   font-weight: 300;
 }
 #logo {
@@ -353,7 +353,7 @@ body {
 .nav-icon,
 .main-nav-link {
   float: left;
-  color: #f17c67;
+  color: #4b5cc4;
   opacity: 0.6;
   text-decoration: none;
   -webkit-transition: opacity 0.2s;
@@ -437,7 +437,7 @@ body {
   background: #fff;
   padding: 5px 15px;
   border-radius: 15px;
-  border: 1px solid #f17c67;
+  border: 1px solid #4b5cc4;
 }
 .search-form-input {
   border: none;
@@ -512,7 +512,7 @@ body {
   transition: color 0.2s;
 }
 a.article-title:hover {
-  color: #f17c67;
+  color: #4b5cc4;
 }
 .article-entry {
   color: #333;
@@ -549,7 +549,7 @@ a.article-title:hover {
   margin: 1.1em 0;
 }
 .article-entry a {
-  color: #f17c67;
+  color: #4b5cc4;
   text-decoration: none;
 }
 .article-entry a:hover {
@@ -656,7 +656,7 @@ p.article-more-link a {
   text-decoration: none;
 }
 p.article-more-link a:hover {
-  background: #f17c67;
+  background: #4b5cc4;
   color: #fff;
   text-decoration: none;
 }
@@ -676,7 +676,7 @@ p.article-more-link a:hover {
   clear: both;
 }
 .article-footer a {
-  color: #f17c67;
+  color: #4b5cc4;
   text-decoration: none;
 }
 .article-footer a:hover {
@@ -913,7 +913,7 @@ p.article-more-link a:hover {
   margin: 50px 0;
 }
 #comments a {
-  color: #f17c67;
+  color: #4b5cc4;
 }
 .archives-wrap {
   margin: 50px 0;
@@ -969,7 +969,7 @@ p.article-more-link a:hover {
   line-height: 1.6em;
 }
 .archive-article-title:hover {
-  color: #f17c67;
+  color: #4b5cc4;
 }
 .archive-article-footer {
   margin-top: 1em;
@@ -1010,7 +1010,7 @@ p.article-more-link a:hover {
   text-decoration: none;
 }
 #page-nav a:hover {
-  background: #f17c67;
+  background: #4b5cc4;
   color: #fff;
 }
 #page-nav .prev {
@@ -1041,7 +1041,7 @@ p.article-more-link a:hover {
   color: #999;
 }
 #footer a {
-  color: #f17c67;
+  color: #4b5cc4;
   text-decoration: none;
 }
 #footer a:hover {
@@ -1054,7 +1054,7 @@ p.article-more-link a:hover {
 .article-entry code {
   border: 1px solid #ddd;
   border-radius: 2px;
-  color: #f17c67;
+  color: #4b5cc4;
   margin: 0 2px;
   padding: 0 2px;
   font-family: "Inconsolata", Consolas, Monaco, Menlo, Consolas, monospace;
@@ -1298,7 +1298,7 @@ pre .chunk {
   border-radius: 3px;
 }
 .widget a {
-  color: #f17c67;
+  color: #4b5cc4;
   text-decoration: none;
 }
 .widget a:hover {
