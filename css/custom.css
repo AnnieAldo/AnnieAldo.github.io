@@ -29,7 +29,7 @@ code {
 
 /* 评论 */
 .vat {
-    color: #1d9531 !important;
+    color: #4b5cc4 !important;
 }
 
 /* 防止向下滚动时，边栏不断抖动（sidebar的样式是fixd，这个容易抖动） */
@@ -46,7 +46,7 @@ h2 {
   font-size: 1.75em;
   padding-left: 9px;
   line-height: 1.4;
-  border-left: 6px solid #cce5ff
+  border-left: 6px solid #8798FF
 }
 h3 {
   font-size: 1.5em;
@@ -54,7 +54,7 @@ h3 {
 }
 .article-entry h3:before {
   border-radius: 50%;
-  background-color: #9ed0ff;
+  background-color: #38b48b;
   content: '';
   width: 6px;
   display: inline-block;
@@ -73,7 +73,7 @@ h4 {
   font-size: 1.25em
 }
 h4:before {
-  background-color: #9ed0ff;
+  background-color: #38b48b;
   content: '';
   width: 6px;
   display: inline-block;
