@@ -41,12 +41,12 @@ body,html {
     -webkit-transform: translateZ(0);
 }
 
-/* 标题样式调整 */
+/* 标题样式调整*/
 h2 {
   font-size: 1.75em;
   padding-left: 9px;
   line-height: 1.4;
-  border-left: 6px solid #8798FF
+  border-left: 6px solid #8798ffb3
 }
 h3 {
   font-size: 1.5em;
@@ -54,7 +54,7 @@ h3 {
 }
 .article-entry h3:before {
   border-radius: 50%;
-  background-color: #f17c67;
+  background-color: #8798FF;
   content: '';
   width: 6px;
   display: inline-block;
@@ -73,7 +73,7 @@ h4 {
   font-size: 1.25em
 }
 h4:before {
-  background-color: #f17c67;
+  background-color: #8798FF;
   content: '';
   width: 6px;
   display: inline-block;
