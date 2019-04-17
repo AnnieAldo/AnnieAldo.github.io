@@ -680,7 +680,7 @@ p.article-more-link a:hover {
   text-decoration: none;
 }
 .article-footer a:hover {
-  color: #3b5998;
+  color: #f17c67;
 }
 .article-tag-list-item {
   float: left;
@@ -1303,7 +1303,7 @@ pre .chunk {
 }
 .widget a:hover {
   text-decoration: underline;
-  color: #3b5998;
+  color: #f17c67;
 }
 .widget ul ul,
 .widget ol ul,
