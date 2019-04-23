@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>使用Hexo和Github Pages搭建博客 | Annie Aldo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="按照常规，为了庆祝博客搭建成功，发一篇教程。当然，也是因为我在搭建博客过程时废了一番功夫，似乎目前没有什么教程能够让一个零基础的新手轻松搭建自己的博客。因此写了这个教程，主要针对对hexo没有概念、第一次搭建博客的小白用户。">
+<meta name="keywords" content="教程,Blog,Hexo">
+<meta property="og:type" content="article">
+<meta property="og:title" content="使用Hexo和Github Pages搭建博客">
+<meta property="og:url" content="https://anniealdo.github.io/2010/01/01/100101 使用Hexo和Github Pages搭建博客/index.html">
+<meta property="og:site_name" content="Annie Aldo">
+<meta property="og:description" content="按照常规，为了庆祝博客搭建成功，发一篇教程。当然，也是因为我在搭建博客过程时废了一番功夫，似乎目前没有什么教程能够让一个零基础的新手轻松搭建自己的博客。因此写了这个教程，主要针对对hexo没有概念、第一次搭建博客的小白用户。">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:image" content="https://anniealdo.github.io/images/教程-180918-使用Hexo和Github%20Pages搭建博客-1.png">
+<meta property="og:image" content="https://anniealdo.github.io/images/教程-180918-使用Hexo和Github%20Pages搭建博客-2.png">
+<meta property="og:image" content="https://anniealdo.github.io/images/教程-180918-使用Hexo和Github%20Pages搭建博客-3.png">
+<meta property="og:updated_time" content="2019-04-23T07:43:38.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="使用Hexo和Github Pages搭建博客">
+<meta name="twitter:description" content="按照常规，为了庆祝博客搭建成功，发一篇教程。当然，也是因为我在搭建博客过程时废了一番功夫，似乎目前没有什么教程能够让一个零基础的新手轻松搭建自己的博客。因此写了这个教程，主要针对对hexo没有概念、第一次搭建博客的小白用户。">
+<meta name="twitter:image" content="https://anniealdo.github.io/images/教程-180918-使用Hexo和Github%20Pages搭建博客-1.png">
+  
+  
+    <link rel="shortcut icon" type="image/x-icon" href="/css/images/favicon.ico">
+  
+  <link href="//fonts.googleapis.com/css?family=Inconsolata:400,700|Open+Sans:700,400" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="/css/style.css">
+  
+
+</head>
+<body>
+  <div id="container">
+    <div id="wrap">
+      <div id="header">
+  <div id="header-outer" class="outer">
+    <div id="header-inner" class="inner">
+      <div id="header-title">
+        <h1 id="logo-wrap">
+          <a href="/" id="logo">Annie Aldo
+          
+          </a>
+        </h1>
+      </div>
+      <nav id="sub-nav">
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+          <a class="main-nav-link" href="/about">About</a>
+        
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https://anniealdo.github.io"></form>
+      </div>
+    </div>
+  </div>
+</div>
+      <div id="main-wrap" class="outer">
+        <section id="main"><article id="post-100101 使用Hexo和Github Pages搭建博客" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2010/01/01/100101 使用Hexo和Github Pages搭建博客/" class="article-date">
+  <time datetime="2009-12-31T16:00:00.000Z" itemprop="datePublished">2010-01-01</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/编程/">编程</a>
+  </div>
+
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      使用Hexo和Github Pages搭建博客
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>按照常规，为了庆祝博客搭建成功，发一篇教程。<br>当然，也是因为我在搭建博客过程时废了一番功夫，<br>似乎目前没有什么教程能够让一个<strong>零基础</strong>的新手轻松搭建自己的博客。<br>因此写了这个教程，主要针对对hexo没有概念、第一次搭建博客的小白用户。<br><a id="more"></a></p>
+<h2 id="预备工作"><a href="#预备工作" class="headerlink" title="预备工作"></a>预备工作</h2><h3 id="预备知识"><a href="#预备知识" class="headerlink" title="预备知识"></a>预备知识</h3><p>你需要熟悉<code>Markdown</code>语法，因为之后你的博客就需要用它来写</p>
+<h3 id="预备环境"><a href="#预备环境" class="headerlink" title="预备环境"></a>预备环境</h3><p>请安装好<code>git</code>和<code>node.js</code><br>如果不会，这些是能够轻松百度到的</p>
+<h2 id="第1步：安装Hexo"><a href="#第1步：安装Hexo" class="headerlink" title="第1步：安装Hexo"></a>第1步：安装Hexo</h2><blockquote>
+<p>下述步骤和<a href="https://hexo.io/zh-cn/">Hexo官方文档</a>中一致。</p>
+</blockquote>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-cli -g <span class="comment"># 全局安装hexo</span></span><br><span class="line">hexo init blog <span class="comment"># 这里的blog可以替换成你的博客名</span></span><br><span class="line">cd blog</span><br><span class="line">npm install</span><br><span class="line">hexo s <span class="comment"># 启动hexo server</span></span><br></pre></td></tr></table></figure>
+<p>走到这一步，复制命令窗口中的地址到浏览器中，你已经可以在本地运行自己的博客了。</p>
+<h2 id="第2步：Git"><a href="#第2步：Git" class="headerlink" title="第2步：Git"></a>第2步：Git</h2><h3 id="创建Repository"><a href="#创建Repository" class="headerlink" title="创建Repository"></a>创建Repository</h3><blockquote>
+<p>下述步骤和<a href="https://pages.github.com/">Github Pages官方文档</a>中一致。</p>
+</blockquote>
+<p>登录<a href="https://github.com/">Github</a>，创建自己的Repository</p>
+<p><img src="/images/教程-180918-使用Hexo和Github Pages搭建博客-1.png" width="240" /></p>
+<p>如图填写<code>repository name</code>为<code>username.github.io</code>，其中<code>username</code>必须是你Github的用户名</p>
+<p><img src="/images/教程-180918-使用Hexo和Github Pages搭建博客-2.png" width="600" /></p>
+<p>创建完成后，复制此时显示的url</p>
+<p><img src="/images/教程-180918-使用Hexo和Github Pages搭建博客-3.png" alt=""></p>
+<h3 id="配置本地博客"><a href="#配置本地博客" class="headerlink" title="配置本地博客"></a>配置本地博客</h3><p>打开博客根目录下的<code>_config.yml</code>文件<br>修改<code>Deployment</code>下面的配置，把刚刚复制的url粘贴到<code>repo:</code>后面</p>
+<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Deployment</span></span><br><span class="line"><span class="comment">## Docs: https://hexo.io/docs/deployment.html</span></span><br><span class="line"><span class="attr">deploy:</span></span><br><span class="line"><span class="attr">  type:</span> <span class="string">git</span></span><br><span class="line"><span class="attr">  repo:</span> <span class="attr">https://github.com/AnnieAldo/AnnieAldo.github.io</span></span><br><span class="line"><span class="attr">  branch:</span> <span class="string">master</span></span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>这里给小白们解释一下，yml是一种配置语法<br>我们刚刚相当于把Github上你创建的repository配置到了这个hexo项目中<br>type: 我们选择Github Pages来生成博客<br>repo: 我们的Github repository地址<br>branch: 选择master也就是主线来配置博客</p>
+</blockquote>
+<p>修改好了<code>_config.yml</code>文件之后，我们就可以将博客部署在Github Pages中了<br>在命令窗口进入博客根目录<br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hexo g <span class="comment"># 生成待提交的博客静态文件</span></span><br><span class="line">hexo d <span class="comment"># 将生成的博客提交到git</span></span><br></pre></td></tr></table></figure></p>
+<p>这一步成功后，我们就可以在相应的Github Pages看到自己的博客了<br>博客的地址是<code>https://username.github.io/</code><br>注意，如果你是第一次创建这个名称的Github Pages，进入页面会显示404<br>一般需要<strong>等待20-30min</strong>就可以正常显示了</p>
+<blockquote>
+<p>以后你通过<code>hexo g</code>和<code>hexo d</code>更新博客时，一般也会有延迟，但就不会这么久啦<br>所以还是建议更新博客的时候，先在本地使用<code>hexo s</code>调试好之后，一次性提交到git，毕竟本地调试时没有延迟的</p>
+</blockquote>
+<h3 id="博客调试与更新"><a href="#博客调试与更新" class="headerlink" title="博客调试与更新"></a>博客调试与更新</h3><table>
+<thead>
+<tr>
+<th>命令</th>
+<th>作用</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>hexo s</code> == <code>hexo server</code></td>
+<td>1. 从本地运行博客</td>
+</tr>
+<tr>
+<td><code>hexo g</code> == <code>hexo generate</code></td>
+<td>2. 生成待提交的博客静态文件</td>
+</tr>
+<tr>
+<td><code>hexo d</code> == <code>hexo deploy</code></td>
+<td>3. 将生成的博客提交到git</td>
+</tr>
+</tbody>
+</table>
+<p>好了，在等待Github Pages刷新出来的这段时间里，让我们接着给我们的博客安装一个主题吧~</p>
+<h2 id="第3步：安装主题"><a href="#第3步：安装主题" class="headerlink" title="第3步：安装主题"></a>第3步：安装主题</h2><p>官方博客可以说是很丑陋了，让我们一起来给自己的博客挑选一个主题吧~<br>在<a href="https://github.com/hexojs/hexo/wiki/Themes">这里</a>可以看到Hexo社区中的所有主题，点开<code>Demo</code>就能够预览</p>
+<p>网上很多教程都会使用<a href="https://github.com/iissnan/hexo-theme-next">NexT主题</a>，如果你也喜欢这款主题，可以搜索一下其他关于这个主题的教程</p>
+<p>本篇教程中介绍我自己使用的<a href="https://github.com/forsigner/fexo">fexo主题</a><br>这个主题非常简洁，拥有漂亮的Markdown语法渲染，而且自定义程度高<br>后文也会提到一些主题自定义的内容</p>
+<p>下面的文章都会按照安装<code>fexo</code>主题的步骤去讲<br>你可以选择和我安装一样的主题，也可以选择只看主题间共性的内容</p>
+<h3 id="安装主题"><a href="#安装主题" class="headerlink" title="安装主题"></a>安装主题</h3><p>在命令窗口进入博客根目录<br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git clone git@github.com:forsigner/fexo.git themes/fexo</span><br></pre></td></tr></table></figure></p>
+<h3 id="启用主题"><a href="#启用主题" class="headerlink" title="启用主题"></a>启用主题</h3><p>打开博客根目录下的<code>_config.yml</code>文件<br>修改<code>Themes</code>下面的配置<br><figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">## Themes: https://hexo.io/themes/</span></span><br><span class="line"><span class="attr">theme:</span> <span class="string">fexo</span></span><br></pre></td></tr></table></figure></p>
+<h3 id="自定义主题"><a href="#自定义主题" class="headerlink" title="自定义主题"></a>自定义主题</h3><p>打开博客根目录下的<code>themes/fexo/_config.yml</code>，按照<a href="http://forsigner.com/2016/03/10/fexo-doc-zh-cn/">fexo文档</a>中的讲解配置</p>
+<p><a href="https://raw.githubusercontent.com/AnnieAldo/AnnieAldo.github.io/master/images/config">这里</a>给出我博客的完整配置，可以直接替换原版的<code>themes/fexo/_config.yml</code>文件</p>
+<p>这个配置文件具有以下特性：</p>
+<ul>
+<li>保留了原版中所有的注释和配置提示内容</li>
+<li>加入了更多的注释</li>
+<li>加入了我自己的一些配置</li>
+</ul>
+<hr>
+<center>未完待续，下文是草稿</center>
+
+<h3 id="Debug"><a href="#Debug" class="headerlink" title="Debug"></a>Debug</h3><h4 id="目录显示错误（前面有黑点）"><a href="#目录显示错误（前面有黑点）" class="headerlink" title="目录显示错误（前面有黑点）"></a>目录显示错误（前面有黑点）</h4><p>不要跳跃使用标题，比如使用<code>##</code>后马上使用<code>####</code></p>
+<h4 id="custom-css提交后的更新会比较慢"><a href="#custom-css提交后的更新会比较慢" class="headerlink" title="custom.css提交后的更新会比较慢"></a>custom.css提交后的更新会比较慢</h4>
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://anniealdo.github.io/2010/01/01/100101 使用Hexo和Github Pages搭建博客/" data-id="cjuthhnle00006pbv9g9a5jkz" class="article-share-link">Share</a>
+      
+        <a href="/2010/01/01/100101 使用Hexo和Github Pages搭建博客/#comments" class="article-comment-link">
+          <span class="post-comments-count valine-comment-count" data-xid="/2010/01/01/100101 使用Hexo和Github Pages搭建博客/" itemprop="commentCount"></span>
+          Comment
+        </a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Blog/">Blog</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Hexo/">Hexo</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/教程/">教程</a></li></ul>
+
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2015/06/07/150607 Forest Elf/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          Forest Elf
+        
+      </div>
+    </a>
+  
+  
+</nav>
+
+  
+</article>
+
+
+  <section id="comments" class="vcomment">
+
+  </section>
+
+</section>
+        
+          
+            <aside id="sidebar" class="fixed">
+    <div class="widget-wrap fixed">
+    <h3 class="widget-title">Anchors</h3>
+
+    <div class="widget">
+        <ul class='toc'>
+        <li><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#预备工作"><span class="toc-number">1.</span> <span class="toc-text">预备工作</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#预备知识"><span class="toc-number">1.1.</span> <span class="toc-text">预备知识</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#预备环境"><span class="toc-number">1.2.</span> <span class="toc-text">预备环境</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#第1步：安装Hexo"><span class="toc-number">2.</span> <span class="toc-text">第1步：安装Hexo</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#第2步：Git"><span class="toc-number">3.</span> <span class="toc-text">第2步：Git</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#创建Repository"><span class="toc-number">3.1.</span> <span class="toc-text">创建Repository</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#配置本地博客"><span class="toc-number">3.2.</span> <span class="toc-text">配置本地博客</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#博客调试与更新"><span class="toc-number">3.3.</span> <span class="toc-text">博客调试与更新</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#第3步：安装主题"><span class="toc-number">4.</span> <span class="toc-text">第3步：安装主题</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#安装主题"><span class="toc-number">4.1.</span> <span class="toc-text">安装主题</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#启用主题"><span class="toc-number">4.2.</span> <span class="toc-text">启用主题</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#自定义主题"><span class="toc-number">4.3.</span> <span class="toc-text">自定义主题</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Debug"><span class="toc-number">4.4.</span> <span class="toc-text">Debug</span></a></li></ol></li></ol></li>
+        </ul>
+    </div>
+</div>
+
+    
+    <div class="widget-wrap">
+      <h3 class="widget-title">Related</h3>
+      <div class="widget recents">
+        <ul>
+  
+    <li>
+      <a href="/2017/03/17/170317 Homebrew/">Homebrew</a>
+    </li>
+  
+    <li>
+      <a href="/2018/09/13/180913 Markdown/">Markdown</a>
+    </li>
+  
+        </ul>
+      </div>
+    </div>
+
+</aside>
+
+          
+        
+      </div>
+      <div id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      <!-- <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png" /></a></br> -->
+      &copy; 2019 Annie Aldo<br>
+    </div>
+  </div>
+  
+    <!--  <script src='https://unpkg.com/mermaid@7.1.2/dist/mermaid.min.js'></script> -->
+    <script type='text/javascript' src='/js/mermaid@7.1.2/dist/mermaid.min.js'></script>
+    <script>
+      if (window.mermaid) {
+        mermaid.initialize({theme: 'forest'});
+      }
+    </script>
+  
+</div>
+
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+    <a href="/about" class="mobile-nav-link">About</a>
+  
+</nav>
+    
+<script>
+  var disqus_shortname = 'fuchen';
+  
+  var disqus_url = 'https://anniealdo.github.io/2010/01/01/100101 使用Hexo和Github Pages搭建博客/';
+  
+  (function(){
+    var dsq = document.createElement('script');
+    dsq.type = 'text/javascript';
+    dsq.async = true;
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+</script>
+
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+
+  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+  <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+<script>
+    var GUEST_INFO = ['nick','mail','link'];
+    var guest_info = 'nick,mail,link'.split(',').filter(function(item){
+        return GUEST_INFO.indexOf(item) > -1
+    });
+    var notify = 'true' == true;
+    var verify = 'false' == true;
+    new Valine({
+        el: '.vcomment',
+        notify: notify,
+        verify: verify,
+        appId: "8fMGSVMEOL4RdICaLRnTqnFO-gzGzoHsz",
+        appKey: "Te18vwA44bmNaCDiNiULppnY",
+        placeholder: "Comment here. Markdown is supported.",
+        pageSize:'10',
+        avatar:'identicon',
+        lang:'zh-cn'
+    });
+</script>
+
+
+
+  <link rel="stylesheet" href="/css/custom.css">
+
+
+    <a href='#logo' id='btn-btt'>^</a>
+  </div>
+</body>
+</html>
