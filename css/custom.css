@@ -41,16 +41,41 @@ body,html {
     -webkit-transform: translateZ(0);
 }
 
+/* 行距调整 */
+.article-entry p, .article-entry table {
+    line-height: 1.6em;
+    margin: 0.3em 0;
+    margin-left: 14.1px;
+}
+figure.highlight {
+    margin-left: 14.1px;
+}
+/* 列表行距调整 */
+.article-entry ol li, .article-entry ul li  {
+    margin: 0.5em 0;
+    margin-left: 14.1px;
+}
+
+
+/* 引用样式背景 */
+.article-entry blockquote {
+    background-color: #f5f5f5b8;
+    margin-left: 14.1px;
+}
+
 /* 标题样式调整*/
 h2 {
+  margin-top: 3em !important;
   font-size: 1.75em;
   padding-left: 9px;
   line-height: 1.4;
-  border-left: 6px solid #8798ffb3
+  border-left: 6px solid #8798ffb3;
+  /* margin-left: -14.1px !important; */
 }
 h3 {
   font-size: 1.5em;
-  line-height: 1.43
+  line-height: 1.43;
+  /* margin-left: -14.1px !important; */
 }
 .article-entry h3:before {
   border-radius: 50%;
