@@ -45,27 +45,25 @@ body,html {
 .article-entry p, .article-entry table {
     line-height: 1.6em;
     margin: 0.3em 0;
-    margin-left: 14.1px;
 }
-figure.highlight {
-    margin-left: 14.1px;
+p.article-more-link {
+    margin: 1em 0 -0.8em 0 !important;
 }
-/* 列表行距调整 */
+.article-entry > :first-child {
+    margin-top: 1em !important;
+}
 .article-entry ol li, .article-entry ul li  {
     margin: 0.5em 0;
-    margin-left: 14.1px;
 }
-
 
 /* 引用样式背景 */
 .article-entry blockquote {
     background-color: #f5f5f5b8;
-    margin-left: 14.1px;
 }
 
 /* 标题样式调整*/
 h2 {
-  margin-top: 3em !important;
+  margin-top: 2em !important;
   font-size: 1.75em;
   padding-left: 9px;
   line-height: 1.4;
