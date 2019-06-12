@@ -61,6 +61,13 @@ p.article-more-link {
     background-color: #f5f5f5b8;
 }
 
+/* 表格样式 */
+.article-entry > table {
+    width: 90%;
+    position: relative;
+    left:5%;
+}
+
 /* 标题样式调整*/
 h2 {
   margin-top: 2em !important;
