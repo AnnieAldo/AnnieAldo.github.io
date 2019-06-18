@@ -13,7 +13,7 @@
 <meta property="og:site_name" content="Annie Aldo">
 <meta property="og:description" content="安装根据官网提供的方法安装，即直接在cmd输入： /usr/bin/ruby -e &amp;quot;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)&amp;quot;">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-06-10T03:01:47.314Z">
+<meta property="og:updated_time" content="2019-06-18T05:32:02.850Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Homebrew">
 <meta name="twitter:description" content="安装根据官网提供的方法安装，即直接在cmd输入： /usr/bin/ruby -e &amp;quot;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)&amp;quot;">
@@ -160,15 +160,6 @@
 </tr>
 </tbody>
 </table>
-<h2 id="解决下载速度慢的问题"><a href="#解决下载速度慢的问题" class="headerlink" title="解决下载速度慢的问题"></a>解决下载速度慢的问题</h2><h4 id="使用国内镜像"><a href="#使用国内镜像" class="headerlink" title="使用国内镜像"></a>使用国内镜像</h4><p>（未测试）</p>
-<h4 id="自己下载需要安装的包"><a href="#自己下载需要安装的包" class="headerlink" title="自己下载需要安装的包"></a>自己下载需要安装的包</h4><p>brew是单线程下载，比较慢。</p>
-<ol>
-<li>使用<code>brew cask install [app]</code>进入下载界面，会看到一个<u>下载地址</u>，看到后停止当前下载</li>
-<li><code>brew --cache</code>查看brew下载目录，进入目录</li>
-<li>删除刚才<code>下载中的文件</code>，替换为在<u>下载地址</u><code>下载的文件</code>。注意，根据<code>下载中的文件</code>的文件名 <strong>重命名</strong> <code>下载的文件</code></li>
-<li>重新<code>brew cask install [app]</code></li>
-<li>一般下载的文件比较大，<code>brew cleanup</code>清一下安装包</li>
-</ol>
 <h2 id="应用备份"><a href="#应用备份" class="headerlink" title="应用备份"></a>应用备份</h2><blockquote>
 <p>本方法会同时备份来自AppStore的App</p>
 </blockquote>
@@ -190,8 +181,18 @@
 <li><code>brew install mas</code></li>
 <li>批量安装<br><code>brew bundle --file=&#39;~/Document/常用文件/备份/brew-file&#39;</code></li>
 </ol>
+<h2 id="解决下载速度慢的问题"><a href="#解决下载速度慢的问题" class="headerlink" title="解决下载速度慢的问题"></a>解决下载速度慢的问题</h2><h4 id="使用国内镜像"><a href="#使用国内镜像" class="headerlink" title="使用国内镜像"></a>使用国内镜像</h4><p>（未测试）</p>
+<h4 id="自己下载需要安装的包"><a href="#自己下载需要安装的包" class="headerlink" title="自己下载需要安装的包"></a>自己下载需要安装的包</h4><p>brew是单线程下载，比较慢。</p>
+<ol>
+<li>使用<code>brew cask install [app]</code>进入下载界面，会看到一个<u>下载地址</u>，看到后停止当前下载</li>
+<li><code>brew --cache</code>查看brew下载目录，进入目录</li>
+<li>删除刚才<code>下载中的文件</code>，替换为在<u>下载地址</u><code>下载的文件</code>。注意，根据<code>下载中的文件</code>的文件名 <strong>重命名</strong> <code>下载的文件</code></li>
+<li>重新<code>brew cask install [app]</code></li>
+<li>一般下载的文件比较大，<code>brew cleanup</code>清一下安装包</li>
+</ol>
 <h2 id="推荐应用"><a href="#推荐应用" class="headerlink" title="推荐应用"></a>推荐应用</h2><p>下面的应用主要自用，如果不知道是什么就不要下载了。</p>
-<h3 id="常见包"><a href="#常见包" class="headerlink" title="常见包"></a>常见包</h3><p><code>brew install wget git node</code></p>
+<h3 id="常见包"><a href="#常见包" class="headerlink" title="常见包"></a>常见包</h3><p><code>brew install gcc</code></p>
+<p><code>brew install git node wget yarn</code></p>
 <h3 id="zsh-amp-anaconda"><a href="#zsh-amp-anaconda" class="headerlink" title="zsh &amp; anaconda"></a>zsh &amp; anaconda</h3><p><code>brew install zsh zsh-completions</code></p>
 <p><code>curl -L https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh | sh</code></p>
 <p><code>brew cask install anaconda</code></p>
@@ -204,7 +205,7 @@
 <p>关于Anaconda的其他配置可以看我的另一篇文章Anaconda</p>
 <h3 id="系统预览"><a href="#系统预览" class="headerlink" title="系统预览"></a>系统预览</h3><p><code>brew cask install qlcolorcode qlimagesize qlmarkdown qlstephen quicklook-csv quicklook-json</code></p>
 <p><code>ql</code>或者<code>quicklook</code>开头的App全都用于<code>预览</code>，使预览文件的时候能够渲染文件</p>
-<h3 id="常见App"><a href="#常见App" class="headerlink" title="常见App"></a>常见App</h3><p><code>brew cask install shiftit atom mweb typora neteasemusic iina numi pdf-expert</code></p>
+<h3 id="常见App"><a href="#常见App" class="headerlink" title="常见App"></a>常见App</h3><p><code>brew cask install alfred shiftit atom typora neteasemusic iina mweb numi pdf-expert</code></p>
 <table>
 <thead>
 <tr>
@@ -215,8 +216,8 @@
 </thead>
 <tbody>
 <tr>
-<td><code>shiftit</code></td>
-<td>窗口分配，和Moom相似</td>
+<td><code>alfred</code></td>
+<td>不解释</td>
 <td></td>
 </tr>
 <tr>
@@ -225,13 +226,23 @@
 <td></td>
 </tr>
 <tr>
-<td><code>mweb</code></td>
-<td>Markdown写作</td>
-<td>✔️</td>
+<td><code>easyfind</code></td>
+<td>比alfred文件搜索好用（就一点）</td>
+<td></td>
 </tr>
 <tr>
-<td><code>typora</code></td>
-<td>Markdown写作</td>
+<td><code>iina</code></td>
+<td>视频播放</td>
+<td></td>
+</tr>
+<tr>
+<td><code>iterm2</code></td>
+<td>命令行</td>
+<td></td>
+</tr>
+<tr>
+<td><code>krita</code></td>
+<td>绘画</td>
 <td></td>
 </tr>
 <tr>
@@ -240,9 +251,19 @@
 <td></td>
 </tr>
 <tr>
-<td><code>iina</code></td>
-<td>视频播放</td>
+<td><code>shiftit</code></td>
+<td>窗口分配，和Moom相似</td>
 <td></td>
+</tr>
+<tr>
+<td><code>typora</code></td>
+<td>Markdown写作</td>
+<td></td>
+</tr>
+<tr>
+<td><code>mweb</code></td>
+<td>Markdown写作</td>
+<td>✔️</td>
 </tr>
 <tr>
 <td><code>numi</code></td>
@@ -260,7 +281,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://anniealdo.github.io/2017/03/17/170317 Homebrew/" data-id="cjwulvmr8000afrbv6bfncaqg" class="article-share-link">Share</a>
+      <a data-url="https://anniealdo.github.io/2017/03/17/170317 Homebrew/" data-id="cjx1dg15w0002x5bv49e4typb" class="article-share-link">Share</a>
       
         <a href="/blog/2017/03/17/170317 Homebrew/#comments" class="article-comment-link">
           <span class="post-comments-count valine-comment-count" data-xid="/blog/2017/03/17/170317 Homebrew/" itemprop="commentCount"></span>
@@ -310,7 +331,7 @@
 
     <div class="widget">
         <ul class='toc'>
-        <li><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#安装"><span class="toc-number">1.</span> <span class="toc-text">安装</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#基础命令"><span class="toc-number">2.</span> <span class="toc-text">基础命令</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#cask"><span class="toc-number">2.1.</span> <span class="toc-text">cask</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#解决下载速度慢的问题"><span class="toc-number">3.</span> <span class="toc-text">解决下载速度慢的问题</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#应用备份"><span class="toc-number">4.</span> <span class="toc-text">应用备份</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#备份步骤"><span class="toc-number">4.1.</span> <span class="toc-text">备份步骤</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#恢复步骤"><span class="toc-number">4.2.</span> <span class="toc-text">恢复步骤</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#推荐应用"><span class="toc-number">5.</span> <span class="toc-text">推荐应用</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#常见包"><span class="toc-number">5.1.</span> <span class="toc-text">常见包</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#zsh-amp-anaconda"><span class="toc-number">5.2.</span> <span class="toc-text">zsh &amp; anaconda</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#系统预览"><span class="toc-number">5.3.</span> <span class="toc-text">系统预览</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#常见App"><span class="toc-number">5.4.</span> <span class="toc-text">常见App</span></a></li></ol></li></ol></li>
+        <li><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#安装"><span class="toc-number">1.</span> <span class="toc-text">安装</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#基础命令"><span class="toc-number">2.</span> <span class="toc-text">基础命令</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#cask"><span class="toc-number">2.1.</span> <span class="toc-text">cask</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#应用备份"><span class="toc-number">3.</span> <span class="toc-text">应用备份</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#备份步骤"><span class="toc-number">3.1.</span> <span class="toc-text">备份步骤</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#恢复步骤"><span class="toc-number">3.2.</span> <span class="toc-text">恢复步骤</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#解决下载速度慢的问题"><span class="toc-number">4.</span> <span class="toc-text">解决下载速度慢的问题</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#推荐应用"><span class="toc-number">5.</span> <span class="toc-text">推荐应用</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#常见包"><span class="toc-number">5.1.</span> <span class="toc-text">常见包</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#zsh-amp-anaconda"><span class="toc-number">5.2.</span> <span class="toc-text">zsh &amp; anaconda</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#系统预览"><span class="toc-number">5.3.</span> <span class="toc-text">系统预览</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#常见App"><span class="toc-number">5.4.</span> <span class="toc-text">常见App</span></a></li></ol></li></ol></li>
         </ul>
     </div>
 </div>
